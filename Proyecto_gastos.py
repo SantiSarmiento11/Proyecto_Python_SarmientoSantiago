@@ -1,8 +1,4 @@
-# -*- coding: utf-8 -*-
-# Simulador de Gasto Diario
-# Permite registrar, listar, calcular y generar reportes de gastos
-# Los datos se guardan y cargan desde un archivo JSON
-# Se usa tabulate para mostrar tablas en la terminal
+
 
 import json
 import os
