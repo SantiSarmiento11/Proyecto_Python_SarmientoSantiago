@@ -1,9 +1,13 @@
 from Obtener_fecha_actual import obtener_fecha
 import mover_gastos as mg
 
+#Esta funcion es muy importante ya que registo todo lo que el usuario me de
+#Desde aca es que voy a poder manipular los gastos ya que los recibo desde aca
 def registro_datos(gastos):
     
-    
+    #aqui le pregunto al usuario valores como el monto, categoria y descripcion luego
+    #la guardo en un diccionario que se guardara luego con los demas gastos
+    #y si no hay mas gastos se guardara en una lista que viene desde json_a_datos
     try: 
         monto = float(input("Cuanto fue el gasto: ").strip())
     except ValueError:

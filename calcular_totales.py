@@ -1,6 +1,9 @@
 from datetime import *
 from tabulate import tabulate
 
+
+#En esta funcion lo que necesito es calcular el total de gastos para luego
+#Utilizarlos para clasificarlos por dia, semana etc
 def calcular_total_gastos(gastos, dias=None):
     if not gastos:
         return 0.0
@@ -21,7 +24,8 @@ def calcular_total_gastos(gastos, dias=None):
     return total
 
 
-# Calcula el total por categoría
+#Calcula el total por categoría lo que me ayuda a que por cada periodo
+#Pueda ver el total por cada categoria en una tabla
 def calcular_totales_por_categoria(gastos, dias=None):
     categorias = {}
     hoy = datetime.now()
@@ -49,6 +53,8 @@ def calcular_totales_por_categoria(gastos, dias=None):
 
     return categorias
 
+#Este es el menu desde el cual voy a preguntarle al usuario que quiere hacer al momento
+#de calcular gastos 
 def calcular_gastos(gastos):
     while True:
         print("\n=============================================")
@@ -61,6 +67,7 @@ def calcular_gastos(gastos):
 
         opcion = input("Opción: ").strip()
 
+        #Al asignar un valor a la variable dias, le puedo dar los valores correspondientes al dia, semana o mes
         if opcion == "1":
             dias = 0
         elif opcion == "2":
@@ -72,10 +79,10 @@ def calcular_gastos(gastos):
         else:
             print("Escribe una opcion del menu")
             continue
-
+            #Aqui llamo las funciones
         total = calcular_total_gastos(gastos, dias)
         categorias = calcular_totales_por_categoria(gastos, dias)
-
+        #Aqui hago la tabla para mostrar todo
         print(f"\n Total: ${total:.2f}")
         if categorias:
             tabla = [[c, f"${m:.2f}"] for c, m in categorias.items()]

@@ -1,5 +1,7 @@
 from tabulate import tabulate
 
+#Una funcion sencilla que usa tabulate para crear cuadros
+#que utilize bastante en listar gastos, para mostrar los gastos ya filtrados
 def mostrar_tabla_gastos(gastos):
     if not gastos:
         print(" No hay gastos para mostrar.")

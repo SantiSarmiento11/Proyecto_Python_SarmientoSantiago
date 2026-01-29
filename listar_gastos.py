@@ -2,10 +2,17 @@ from tabla_gastos import mostrar_tabla_gastos
 import json
 from datetime import datetime
 
+
+#esta funcion al reccorer gasto por gasto busca el valor de la clave categoria y si corresponde con la que da
+#el usuario se guarda
 def filtrar_gastos_por_categoria(gastos, categoria):
     return [g for g in gastos if g["categoria"] == categoria.lower()]
 
+
+#Aca al poner una fecha de cada gasto en una variable, puedo validar si esa fecha esta o no
+#dentro del periodo de tiempo, si esta guarda el gasto
 def filtrar_por_fecha(gastos, fecha_inicio, fecha_fin):
+
     inicio = datetime.strptime(fecha_inicio, "%Y-%m-%d")
     fin = datetime.strptime(fecha_fin, "%Y-%m-%d")
     
@@ -17,6 +24,8 @@ def filtrar_por_fecha(gastos, fecha_inicio, fecha_fin):
     return resultado
 
 
+#Este es un menu que me ayudara a saber que quiere el usuario
+#con esto llamo las funciones anteriores y las uso para listar los gastos
 def listar_gastos(gastos):
     if not gastos:
         print("\n No hay gastos registrados.")
@@ -33,6 +42,7 @@ def listar_gastos(gastos):
 
         opcion = input("Opción: ").strip()
 
+        #Utilizo la funcion mostra tabla con tabulate para mostrar los gastos ya listados
         if opcion == "1":
             mostrar_tabla_gastos(gastos)
         if opcion == "2":

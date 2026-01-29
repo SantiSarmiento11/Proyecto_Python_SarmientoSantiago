@@ -3,6 +3,8 @@ from datetime import datetime
 from calcular_totales import calcular_total_gastos, calcular_totales_por_categoria
 from tabulate import tabulate
 
+#Con este reporte lo que quiero hacer es mostrarle el total de gastos y los gastos x categoria de el periodo de tiempo que el me diga
+#Por lo tanto creo las funciones respectivas para mostrar el reporte
 def generar_reporte(gastos):
     if not gastos:
         print("\nNo hay gastos registrados para generar un reporte.")
