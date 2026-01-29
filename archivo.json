@@ -1,0 +1,14 @@
+[
+    {
+        "categoria": "servicios",
+        "fecha": "2026-01-28",
+        "monto": 1000.0,
+        "descripcion": "luz"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-28",
+        "monto": 10000.0,
+        "descripcion": "transporte"
+    }
+]
