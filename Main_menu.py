@@ -7,7 +7,8 @@ from calcular_totales import *
 import reporte as r
 
 ARCHIVO_GASTOS_JSON = "archivo.json"
-
+#desde main voy a correr mi menu principal, desde aca llamare a las funciones principales para ejecutar mi menu
+#le pregunto al usuario que funcion quiere realizar y llamo la funcion.
 def menu_principal():
     while True:
         
