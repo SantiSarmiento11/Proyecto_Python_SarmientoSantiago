@@ -5,6 +5,7 @@ from registro_datos import registro_datos
 import listar_gastos
 from calcular_totales import *
 import reporte as r
+from topgastos import obtener_top_gastos
 
 ARCHIVO_GASTOS_JSON = "archivo.json"
 #desde main voy a correr mi menu principal, desde aca llamare a las funciones principales para ejecutar mi menu
@@ -20,7 +21,8 @@ def menu_principal():
         print("Escribe 2 para Para listar los gastos")
         print("Escribe 3 para calcular los gastos totales")
         print("Escribe 4 para generar reporte")
-        print("5 para salir")
+        print("Escribe 5 para ver el top de gastos de > a <")      
+        print("6 para salir")
         opcion = int(input("Dame la opcion: "))
 
         if opcion == 1:
@@ -32,6 +34,8 @@ def menu_principal():
         if opcion == 4:
             r.generar_reporte(gastos)
         if opcion == 5:
+            obtener_top_gastos(gastos)
+        if opcion == 6:
             break
 
 if __name__ == "__main__":
