@@ -10,5 +10,71 @@
         "fecha": "2026-01-28",
         "monto": 10000.0,
         "descripcion": "transporte"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 80000.0,
+        "descripcion": "hola"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 80000.0,
+        "descripcion": "hola"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 80000.0,
+        "descripcion": "hola"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 800000.0,
+        "descripcion": "hola"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 8000000.0,
+        "descripcion": "hola"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 800000.0,
+        "descripcion": "hola"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 1000000.0,
+        "descripcion": "hola"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 1000000.0,
+        "descripcion": "hola"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 800000.0,
+        "descripcion": "hola"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 8000000.0,
+        "descripcion": "hola"
+    },
+    {
+        "categoria": "comida",
+        "fecha": "2026-01-30",
+        "monto": 8000000.0,
+        "descripcion": "hola"
     }
 ]

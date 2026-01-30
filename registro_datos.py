@@ -1,5 +1,6 @@
 from Obtener_fecha_actual import obtener_fecha
 import mover_gastos as mg
+from mostrar_alerta import *
 
 #Esta funcion es muy importante ya que registo todo lo que el usuario me de
 #Desde aca es que voy a poder manipular los gastos ya que los recibo desde aca
@@ -34,6 +35,9 @@ def registro_datos(gastos):
         gastos.append(gasto)
         mg.guardar_a_json(gastos)
         print("Gasto guardado con exito!")
+
+        porcentaje_alerta_diaria(gastos)
+        porcentaje_alerta_semanal(gastos)
 
     else:
         print("Gasto no guardado, se te devolvera al menu.")

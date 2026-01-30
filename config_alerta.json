@@ -1,0 +1,32 @@
+[
+    {
+        "tipo": "diaria",
+        "fecha": "2026-01-30",
+        "porcentaje": 500000,
+        "gastado": 11840000.0
+    },
+    {
+        "tipo": "diaria",
+        "fecha": "2026-01-30",
+        "porcentaje": 500000,
+        "gastado": 12640000.0
+    },
+    {
+        "tipo": "diaria",
+        "fecha": "2026-01-30",
+        "porcentaje": 500000,
+        "gastado": 20640000.0
+    },
+    {
+        "tipo": "diaria",
+        "fecha": "2026-01-30",
+        "porcentaje": 500000,
+        "gastado": 28640000.0
+    },
+    {
+        "tipo": "semanal",
+        "fecha": "2026-01-30",
+        "porcentaje": 3000000,
+        "gastado": 28651000.0
+    }
+]
